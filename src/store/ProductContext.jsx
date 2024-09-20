@@ -4,7 +4,6 @@ export const ProductContext = createContext(null)
 
 function Product({children}){
     const [productDetails,setProductDetails] = useState(null)
-    console.log(productDetails,'context');
     return (
         <ProductContext.Provider value={{productDetails,setProductDetails}}>
             {children}

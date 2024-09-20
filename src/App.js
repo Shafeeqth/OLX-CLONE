@@ -17,7 +17,7 @@ function App() {
       let unsubscribe = onAuthStateChanged(auth, (user) => {
         if (user) {
           setUser(user); 
-          console.log(user.displayName,user,'apphai') 
+          console.log(user.displayName,user,'app hai') 
         }else{
           setUser(null)
           console.log('app,debug');

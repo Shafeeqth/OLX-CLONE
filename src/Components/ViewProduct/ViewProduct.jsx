@@ -47,6 +47,7 @@ function ViewProduct() {
       <div className="rightSection">
         <div className="productDetails">
           <p>&#x20B9;{productDetails.price} </p>
+          <p>&#x20B9;{productDetails?.mrpPrice} </p>
           <span>{productDetails.name}</span>
           <p>{productDetails.category}</p>
           <span>{productDetails.createdAt}</span>

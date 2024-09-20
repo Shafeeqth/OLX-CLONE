@@ -14,6 +14,7 @@ const AddProduct = () => {
   const [name,setName] = useState('')
   const [category,setCategory] = useState('')
   const [price,setPrice] = useState('')
+  const [mrpPrice,setMrpPrice] = useState('')
   const [image,setImage] = useState(null)
   const [error,setError] = useState(false)
   const [loading,setLoading] = useState(false)
@@ -45,6 +46,7 @@ const AddProduct = () => {
           name,
           category,
           price,
+          mrpPrice,
           url,
           userId: user.uid ,
           createdAt: dates.toISOString().split('T')[0], 
@@ -100,6 +102,13 @@ const AddProduct = () => {
             <input className="input" type="number"  name="Price"
             value={price} 
             onChange={(e)=>{setPrice(e.target.value)}}
+            />
+            <br />
+            <label htmlFor="fname">MRP Price</label>
+            <br />
+            <input className="input" type="number"  name="Price"
+            value={mrpPrice} 
+            onChange={(e)=>{setMrpPrice(e.target.value)}}
             />
             <br />
          
